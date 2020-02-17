@@ -151,3 +151,4 @@ alias copy='xsel -ib'
 #bindkey -v
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
  eval "$(fasd --init auto)"
+ export PAGER=bat
