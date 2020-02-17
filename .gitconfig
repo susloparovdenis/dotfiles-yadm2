@@ -2,7 +2,7 @@
 	name = Denis Susloparov
 	email = densus@gmail.com
 [credential]
-	helper = /usr/lib/git-core/git-credential-libsecret
+	helper = libsecret
 [color]
 	ui = true
 [color "diff-highlight"]
