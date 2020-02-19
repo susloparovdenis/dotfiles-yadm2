@@ -77,6 +77,7 @@ antigen bundles <<EOBUNDLES
     dotenv
     zsh-users/zsh-syntax-highlighting
     lukechilds/zsh-nvm
+    vi-mode
 EOBUNDLES
 
 
@@ -150,5 +151,6 @@ TRAPWINCH() {
 alias copy='xsel -ib'
 #bindkey -v
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
- eval "$(fasd --init auto)"
- export PAGER=bat
+eval "$(fasd --init auto)"
+export PAGER=bat
+export KEYTIMEOUT=1
