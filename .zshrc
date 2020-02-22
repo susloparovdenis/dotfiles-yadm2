@@ -77,7 +77,6 @@ antigen bundles <<EOBUNDLES
     dotenv
     zsh-users/zsh-syntax-highlighting
     lukechilds/zsh-nvm
-    vi-mode
 EOBUNDLES
 
 
@@ -154,3 +153,4 @@ alias copy='xsel -ib'
 eval "$(fasd --init auto)"
 export PAGER=bat
 export KEYTIMEOUT=1
+eval "$(pyenv init -)"
