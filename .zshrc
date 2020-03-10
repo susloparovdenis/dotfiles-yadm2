@@ -21,64 +21,7 @@ PATH+=:~/.local/go/bin
 PATH+=:~/.dotnet/tools
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export FZF_BASE=/usr/share/fzf/
-antigen bundles <<EOBUNDLES
-    adrieankhisbe/zsh-quiet-accept-line
-    pip
-    command-not-found
-    archive
-    completion
-    zshdirectory
-    editor              
-    nmap
-    thefuck
-    systemd
-    docker
-    kubectl
-    docker-compose
-    git
-    common-aliases
-    compleat 
-    copyfile # Copies content of a file into clipboard 
-    django
-    fasd # z-like tools
-    gitfast
-    git-extras
-    httpie
-    npm
-    vscode
-
-    Tarrasch/zsh-functional
-    zsh-users/zsh-history-substring-search
-    tarruda/zsh-autosuggestions
-    
-    bil-elmoussaoui/flatpak-zsh-completion
-    srijanshetty/zsh-pip-completion
-    lukechilds/zsh-better-npm-completion
-    ninrod/pass-zsh-completion
-    zsh-users/zsh-completions
-    
-    unixorn/git-extra-commands
-    arialdomartini/oh-my-git
-    MikeDacre/careful_rm
-    wfxr/forgit
-    zlsun/solarized-man
-    joel-porquet/zsh-dircolors-solarized
-    MichaelAquilina/zsh-you-should-use
-    djui/alias-tips
-    unixorn/autoupdate-antigen.zshplugin
-    fzf
-    Vifon/deer
-    leophys/zsh-plugin-fzf-finder
-    ytet5uy4/fzf-widgets
-    wfxr/formarks
-    changyuheng/fz
-    zsh-users/zaw
-    aperezdc/zsh-fzy
-    dotenv
-    zsh-users/zsh-syntax-highlighting
-    lukechilds/zsh-nvm
-EOBUNDLES
-
+antigen bundles < ~/.config/zsh_plugins.txt
 
 # antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
